@@ -1,1 +1,1 @@
-# Ecode-Ai-Hackathon
+# Encode-Ai-Hackathon
