@@ -17,6 +17,30 @@ Additionally, as a user, I value Reputy's potential for expansion and evolution,
 Installation
 Provide step-by-step instructions on how to set up and run the frontend locally. Include any prerequisites and commands necessary for installation.
 
+# Soft Skill Analysis Using AI 🧠🔍
+
+## Workflow 🚀
+
+The analysis and detection of soft skills proceed through three main stages:
+
+### 1. Pre-processing 📊
+
+- Extract essential metadata from the JSON file, focusing on post IDs and captions.
+- Format the data for efficient processing, stripping it down to its core components.
+
+### 2. Retrieval Augmented Generation (RAG) 🤖
+
+- The formatted dataset is fed into OpenAI's GPT-4 LLM via the Assistants API as a temporary file.
+- GPT-4's Retrieval Augmented Generation enhances model accuracy and prevents hallucination.
+- The LLM is pre-prompted to analyze each of the instagram post captions to identify represented soft skills.
+- This detected softskills are then prioritized based on the most represnted 3 out of the 6 skills.
+
+### 3. Post-processing ✨
+
+- The model outputs the three most represented skills found in the analysis along with their post ID's.
+- These skills, alongside relevant metadata like post images, are mapped using the post IDs.
+- Finally, the findings are compiled into a JSON file for front-end integration.
+
 Usage
 Explain how to use the frontend application. Provide instructions on navigating the user interface, interacting with features, and any other relevant information for users.
 
