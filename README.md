@@ -1,66 +1,68 @@
-Encode-Ai-Hackathon
-Reputy
-As a recent graduate looking for a job, I want to showcase my diverse talents and soft skills to potential employers with minimal effort, allowing me to stand out from other candidates and gain an extra edge in the competitive job market.
+🎉 Encode-Ai-Hackathon: Reputy 🤖
 
-As a job seeker creating a CV, I want to present my full potential to employers by highlighting not only my professional achievements but also my hobbies, interests, and lifestyle, enabling me to paint a holistic picture of who I am beyond just my work experience.
+As a recent graduate embarking on the job hunt, I'm excited to introduce Reputy, a cutting-edge tool designed to revolutionize the way job seekers present themselves to potential employers. With Reputy, I can effortlessly showcase my diverse talents and soft skills, giving me that extra edge in today's competitive job market! 💼✨
 
-As a user, I can allow/disallow Reputy to connect to my social media accounts and other platforms, enabling the app to fetch data and analyze it to help identify my soft skills and creativity from my social presence. This feature provides me with control over the information shared and ensures privacy and consent in leveraging my online presence for professional purposes.
+🔍 Features Overview:
 
-As a user, I want Reputy to analyze my social media and online activity to identify and highlight relevant skills and experiences, allowing me to effortlessly incorporate them into my professional profile. This functionality saves me time and effort in manually curating my CV and ensures that my digital footprint is effectively utilized to enhance my job prospects.
+Effortless CV Creation: Highlighting not just professional achievements but also hobbies, interests, and lifestyle.
+Social Media Integration: Connect with ease to leverage online presence for career advancement.
+Skill Highlighting: Automatically analyze and incorporate relevant skills and experiences into your profile.
+Control and Privacy: Review and approve information before it's shared, ensuring accuracy and relevance.
+Optimization Insights: Receive tailored suggestions for enhancing online presence to align with career goals.
+🛠️ Installation Guide:
 
-As a user, I want the option to review and approve the skills and experiences identified by Reputy before they are included in my profile, ensuring accuracy and relevance in the information presented to potential employers. This review process empowers me to maintain control over my professional narrative and tailor it to suit specific job opportunities.
+Get started with Reputy's frontend:
 
-As a user, I expect Reputy to provide insights and recommendations for optimizing my online presence to better align with my career goals, offering suggestions for enhancing visibility, engagement, and professionalism across various social media platforms and online communities. This guidance helps me strategically leverage digital platforms to advance my career and showcase my talents effectively.
+1️⃣ Prerequisites: Ensure you have Node.js and npm installed.
+2️⃣ Clone the Repository: $ git clone https://github.com/reputy/reputy-frontend
+3️⃣ Navigate to Directory: $ cd reputy-frontend
+4️⃣ Install Dependencies: $ npm install
+5️⃣ Run the Application: $ npm start
 
-Additionally, as a user, I value Reputy's potential for expansion and evolution, recognizing that future updates and features may further enhance its usefulness and relevance in supporting my professional journey.
+🧠 Soft Skill Analysis Workflow:
 
-Installation
-Provide step-by-step instructions on how to set up and run the frontend locally. Include any prerequisites and commands necessary for installation.
+Explore how Reputy's AI-driven analysis unfolds:
 
-# Soft Skill Analysis Using AI 🧠🔍
+1️⃣ Pre-processing: Extract metadata and format data for efficient processing.
+2️⃣ Retrieval Augmented Generation (RAG): Utilize GPT-4 LLM for accurate skill detection.
+3️⃣ Post-processing: Compile findings into a user-friendly JSON file for integration.
 
-## Workflow 🚀
+🖥️ Usage Guide:
 
-The analysis and detection of soft skills proceed through three main stages:
+Navigate Reputy's frontend with ease:
 
-### 1. Pre-processing 📊
+User Interface: Intuitive design for seamless interaction.
+Feature Interaction: Effortlessly explore and utilize all functionalities.
+📁 Folder Structure:
 
-- Extract essential metadata from the JSON file, focusing on post IDs and captions.
-- Format the data for efficient processing, stripping it down to its core components.
+Discover the frontend codebase organization:
 
-### 2. Retrieval Augmented Generation (RAG) 🤖
+Components: Reusable UI components.
+Pages: Individual page components.
+Utils: Utility functions and helpers.
+💻 Technologies Used:
 
-- The formatted dataset is fed into OpenAI's GPT-4 LLM via the Assistants API as a temporary file.
-- GPT-4's Retrieval Augmented Generation enhances model accuracy and prevents hallucination.
-- The LLM is pre-prompted to analyze each of the instagram post captions to identify represented soft skills.
-- This detected softskills are then prioritized based on the most represnted 3 out of the 6 skills.
+Languages: HTML, CSS, JavaScript
+Framework: React.js
+Dependencies: OpenAI's GPT-4, Assistants API
+🤝 Contributing Guidelines:
 
-### 3. Post-processing ✨
+Join us in enhancing Reputy:
 
-- The model outputs the three most represented skills found in the analysis along with their post ID's.
-- These skills, alongside relevant metadata like post images, are mapped using the post IDs.
-- Finally, the findings are compiled into a JSON file for front-end integration.
+Submit bug reports, feature requests, or pull requests.
+Follow coding conventions and standards outlined in the repository.
+📝 License:
 
-Usage
-Explain how to use the frontend application. Provide instructions on navigating the user interface, interacting with features, and any other relevant information for users.
+Reputy frontend is distributed under the MIT License.
 
-Folder Structure
-Describe the organization of the frontend codebase. Explain the purpose of each directory and highlight any conventions or patterns used in file naming and structure.
+📧 Contact:
 
-Technologies Used
-List the technologies, frameworks, and libraries used in the frontend project. Include languages (e.g., HTML, CSS, JavaScript), frameworks (e.g., React, Angular, Vue.js), and any third-party dependencies.
+For inquiries or collaboration opportunities, reach out to us:
 
-Contributing
-Outline guidelines for contributing to the frontend repository. Include instructions for submitting bug reports, feature requests, or pull requests, as well as any coding conventions or standards to follow.
+Email: contact@reputy.com
+GitHub: @reputy
+🔗 Additional Resources:
 
-License
-Specify the license under which the frontend code is distributed. Include details on how others can use, modify, and distribute the code, along with any accompanying license files.
+Explore further documentation and tutorials on our website.
 
-Contact
-Provide contact information for the project maintainers or contributors. Include email addresses, GitHub profiles, or other relevant contact details for inquiries or collaboration opportunities.
-
-Additional Resources
-Optionally, include links to additional resources such as documentation, tutorials, or related projects that may be helpful for developers working with the frontend codebase.
-
-Acknowledgements
-If applicable, acknowledge individuals or organizations that have contributed to the frontend development or provided support and assistance throughout the project.
+🙏 Acknowledgements:
