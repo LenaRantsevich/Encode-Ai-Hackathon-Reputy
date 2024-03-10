@@ -1,6 +1,8 @@
+import sys
 from flask import Flask, request, redirect
 import json
 import urllib3
+import logging
 
 app = Flask(__name__)
 
@@ -8,23 +10,35 @@ http = urllib3.PoolManager()
 
 app_id = "395889439750144"
 app_secret = "93d74045fcbeb4737d9ebea879ea10dc"
-redirect_uri = "https://tom123277.github.io"
+redirect_uri = "https://tom123277.github.io/auth"
+
+app.logger.setLevel(logging.INFO)  # Set log level to INFO
+handler = logging.FileHandler('app.log')  # Log to a file
+app.logger.addHandler(handler)
 
 @app.route('/')
+def home():
+    return "Home page!"
+
+@app.route('/insta')
 def get_auth_code():
     get_authorization = http.request("GET", f"https://api.instagram.com/oauth/authorize?client_id={app_id}&redirect_uri={redirect_uri}&scope=user_profile,user_media&response_type=code")
 
-    if get_authorization.status == 200:
-        authorized_url = get_authorization.geturl()
-        print("Authorized URL:", authorized_url)
-        return redirect(authorized_url)
-    else:
-        return "Auth Error"
+    try:
+        if get_authorization.status == 200:
+            authorized_url = get_authorization.url
+            app.logger.info(f"Authorized url:{authorized_url}")
+            return redirect(authorized_url)
+        else:
+            return "Auth Error"
+    except Exception as e:
+        app.logger.error(f"Error: {e}")
 
 @app.route('/auth')
 def handle_auth():
+    redirect_uri = "https://tom123277.github.io"
     auth_code = request.args.get('code')
-    print(auth_code)
+    app.logger.info(f"Auth code:{auth_code}")
 
     get_access_token = http.request(
         "POST",
