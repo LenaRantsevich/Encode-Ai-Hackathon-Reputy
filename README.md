@@ -1,6 +1,6 @@
 # 🎉 Encode-Ai-Hackathon: Reputy.io 🤖
 
-For all the recent graduates embarking on a job hunt, we are excited to introduce **Reputy**, a cutting-edge tool designed to revolutionize the way job seekers present themselves to potential employers. With Reputy, anyone can effortlessly showcase their diverse talents and soft skills, giving them that extra edge in today's competitive job market! 💼✨
+For all the recent graduates embarking on a job hunt, we are excited to introduce **Reputy**, a cutting-edge tool designed to revolutionize the way job seekers present themselves to potential employers. With Reputy, anyone can effortlessly showcase their diverse talents and soft skills, giving them that extra edge in today's competitive job market! 💼✨ Reputy Talent Wallet holds your reputation as personal currency.
 
 ## 🔍 Features Overview
 
@@ -76,11 +76,11 @@ Reputy frontend is distributed under the MIT License.
 
 For inquiries or collaboration opportunities, reach out to us:
 
-- Email: contact@reputy.com
-- GitHub: @reputy
+- Email: lena@reputy.io
+- GitHub: @LenaRantsevich
 
 ## 🔗 Additional Resources
 
-Explore further documentation and tutorials on our website.
-
+Explore the concept on our website:
+www.reputy.io
 
