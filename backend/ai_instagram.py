@@ -3,14 +3,18 @@ from flask import Flask, request, redirect
 import json
 import urllib3
 import logging
+from dotenv import load_dotenv
+
 
 app = Flask(__name__)
 
 http = urllib3.PoolManager()
 
-app_id = "395889439750144"
-app_secret = "93d74045fcbeb4737d9ebea879ea10dc"
-redirect_uri = "https://tom123277.github.io/auth"
+load_dotenv(dotenv_path="../.env")
+
+app_id = os.getenv('APP_ID')
+app_secret = os.getenv('APP_SECRET')
+redirect_uri = os.getenv('REDIRECT_URI')
 
 app.logger.setLevel(logging.INFO)  # Set log level to INFO
 handler = logging.FileHandler('app.log')  # Log to a file
